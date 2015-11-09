@@ -1,6 +1,5 @@
 "Part";"Value";"Device";"Package";"Description";"MF";"MPN";"OC_FARNELL";"OC_NEWARK";"PACKAGE";"PROD_ID";"SUPPLIER";"VALUE";
-"BATV+";"BAT_POS_VOLT";"PINHD-1X1";"1X01";"Pin header 1x1 for 0.1" spacing";"";"";"";"";"";"";"";"";
-"BATV-";"BAT_GND";"PINHD-1X1";"1X01";"Pin header 1x1 for 0.1" spacing";"";"";"";"";"";"";"";"";
+"12V";"22-23-2021";"22-23-2021";"22-23-2021";".100" (2.54mm) Center Header - 2 Pin";"MOLEX";"22-23-2021";"1462926";"25C3832";"";"";"";"";
 "C1";"0.1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C2";"22p";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C3";"0.1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
@@ -8,7 +7,7 @@
 "C5";"10uF";"C-EUC1206";"C1206";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C6";"1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C7";"10uF";"C-EUC1206";"C1206";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
-"C8";"0.1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
+"C8";"10uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C9";"220nF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C10";"0.1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
 "C11";"0.1uF";"C-EUC0603";"C0603-ROUND";"CAPACITOR, European symbol";"";"";"";"";"";"";"";"";
@@ -21,9 +20,8 @@
 "JP1";"AVR_SPI_PROG";"M05X2SHD_LOCK";"2X5-SHROUDED_LOCK";"Header 5x2";"";"";"";"";"";"";"";"";
 "L1";"22uH";"L-USL4532P";"L4532P";"INDUCTOR, American symbol";"";"";"";"";"";"";"";"";
 "L7805";"L7805";"78XXL";"78XXL";"VOLTAGE REGULATOR";"";"";"";"";"";"";"";"";
-"LEDV+";"LED_V+";"PINHD-1X1";"1X01";"Pin header 1x1 for 0.1" spacing";"";"";"";"";"";"";"";"";
-"LEDV-";"LED_V-";"PINHD-1X1";"1X01";"Pin header 1x1 for 0.1" spacing";"";"";"";"";"";"";"";"";
-"PWR_SWTCH";"SWITCH_SPDT";"SWITCH_SPDT";"KPS-1290";"SWCH-10651";"";"";"";"";"";"SWCH-10651";"";"";
+"LED_OUT";"22-23-2021";"22-23-2021";"22-23-2021";".100" (2.54mm) Center Header - 2 Pin";"MOLEX";"22-23-2021";"1462926";"25C3832";"";"";"";"";
+"PWR_SW";"22-23-2021";"22-23-2021";"22-23-2021";".100" (2.54mm) Center Header - 2 Pin";"MOLEX";"22-23-2021";"1462926";"25C3832";"";"";"";"";
 "R1";"10";"R-US_M1206";"M1206";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";
 "R3";"10k";"R-US_M1206";"M1206";"RESISTOR, American symbol";"";"";"";"";"";"";"";"";
 "RESET";"RESET";"MYSMD_PB157";"SMD_157SW";"";"";"";"";"";"";"";"";"";

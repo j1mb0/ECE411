@@ -10311,76 +10311,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Electromechanical">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="KPS-1290">
-<wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="3.35" y1="-1.3" x2="3.35" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="3.35" y1="1.3" x2="-3.35" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-1.5" x2="1.4" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="1.4" y1="-2.8" x2="-1.4" y2="-2.8" width="0.127" layer="51"/>
-<wire x1="-1.4" y1="-2.8" x2="-1.4" y2="-1.5" width="0.127" layer="51"/>
-<smd name="P$1" x="-4.15" y="1.1" dx="1" dy="0.8" layer="1"/>
-<smd name="P$2" x="-4.15" y="-1.1" dx="1" dy="0.8" layer="1"/>
-<smd name="P$3" x="4.15" y="-1.1" dx="1" dy="0.8" layer="1"/>
-<smd name="P$4" x="4.15" y="1.1" dx="1" dy="0.8" layer="1"/>
-<smd name="O" x="-2.25" y="2.25" dx="0.7" dy="1.5" layer="1"/>
-<smd name="P" x="0.75" y="2.25" dx="0.7" dy="1.5" layer="1"/>
-<smd name="S" x="2.25" y="2.25" dx="0.7" dy="1.5" layer="1"/>
-<text x="2.5" y="-2.492" size="0.4064" layer="25">&gt;NAME</text>
-<text x="2.5" y="-3.23" size="0.4064" layer="27">&gt;VALUE</text>
-<hole x="-1.5" y="0" drill="0.9"/>
-<hole x="1.5" y="0" drill="0.9"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SW_SPDT">
-<wire x1="0" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.175" y2="2.54" width="0.1524" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-1.905" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SWITCH_SPDT">
-<description>SWCH-10651
-
-Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
-<gates>
-<gate name="G$1" symbol="SW_SPDT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="KPS-1290">
-<connects>
-<connect gate="G$1" pin="O" pad="O"/>
-<connect gate="G$1" pin="P" pad="P"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="SWCH-10651" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -11268,80 +11198,6 @@ Production Part - 8199
 </deviceset>
 </devicesets>
 </library>
-<library name="adafruit">
-<packages>
-<package name="1X01">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="1X01-CLEANBIG">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="1X1-BIGPOGO">
-<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54" shape="long"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PINHD1">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
-&lt;p&gt;
-With round pins</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CB" package="1X01-CLEANBIG">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-BIGPOGO" package="1X1-BIGPOGO">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="v-reg">
 <description>&lt;b&gt;Voltage Regulators&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -11442,6 +11298,20 @@ With round pins</description>
 <text x="-5.08" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="22-23-2021">
+<description>.100" (2.54mm) Center Headers - 2 Pin</description>
+<wire x1="-2.54" y1="3.175" x2="2.54" y2="3.175" width="0.254" layer="21"/>
+<wire x1="2.54" y1="3.175" x2="2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="2.54" y1="-3.175" x2="-2.54" y2="-3.175" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="-3.175" x2="-2.54" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="3.175" width="0.254" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -11479,6 +11349,29 @@ With round pins</description>
 <attribute name="MPN" value="22-23-2041" constant="no"/>
 <attribute name="OC_FARNELL" value="1462920" constant="no"/>
 <attribute name="OC_NEWARK" value="38C0355" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22-23-2021" prefix="X">
+<description>.100" (2.54mm) Center Header - 2 Pin</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="22-23-2021">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="MOLEX" constant="no"/>
+<attribute name="MPN" value="22-23-2021" constant="no"/>
+<attribute name="OC_FARNELL" value="1462926" constant="no"/>
+<attribute name="OC_NEWARK" value="25C3832" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11742,7 +11635,6 @@ With round pins</description>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
-<part name="PWR_SWTCH" library="SparkFun-Electromechanical" deviceset="SWITCH_SPDT" device=""/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="M05X2" device="SHD_LOCK" value="AVR_SPI_PROG"/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
@@ -11758,13 +11650,9 @@ With round pins</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="BATV+" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_POS_VOLT"/>
-<part name="BATV-" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_GND"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="L7805" library="v-reg" deviceset="78XXL" device="" value="L7805"/>
 <part name="SR04" library="con-molex" deviceset="22-23-2041" device=""/>
-<part name="LEDV+" library="adafruit" deviceset="PINHD-1X1" device="" value="LED_V+"/>
-<part name="LEDV-" library="adafruit" deviceset="PINHD-1X1" device="" value="LED_V-"/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
@@ -11782,6 +11670,9 @@ With round pins</description>
 <part name="C12" library="Smartprj" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="PWR_SW" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="12V" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="LED_OUT" library="con-molex" deviceset="22-23-2021" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11789,7 +11680,7 @@ With round pins</description>
 <text x="241.3" y="7.62" size="2.54" layer="94" font="vector">5</text>
 <wire x1="43.18" y1="149.86" x2="121.92" y2="149.86" width="0.1524" layer="97"/>
 <wire x1="121.92" y1="149.86" x2="121.92" y2="182.88" width="0.1524" layer="97"/>
-<text x="81.28" y="177.8" size="1.778" layer="97">POWER - From Battery</text>
+<text x="81.28" y="175.26" size="1.778" layer="97">POWER - From Battery</text>
 <wire x1="167.64" y1="119.38" x2="167.64" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="167.64" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="97"/>
 <wire x1="238.76" y1="68.58" x2="238.76" y2="119.38" width="0.1524" layer="97"/>
@@ -11853,10 +11744,6 @@ With round pins</description>
 <instance part="GND5" gate="1" x="93.98" y="154.94"/>
 <instance part="C5" gate="G$1" x="83.82" y="165.1"/>
 <instance part="C7" gate="G$1" x="106.68" y="165.1"/>
-<instance part="PWR_SWTCH" gate="G$1" x="71.12" y="167.64" smashed="yes">
-<attribute name="NAME" x="56.515" y="163.83" size="1.778" layer="95"/>
-<attribute name="VALUE" x="68.58" y="171.45" size="1.778" layer="96"/>
-</instance>
 <instance part="JP1" gate="G$1" x="208.28" y="162.56"/>
 <instance part="GND6" gate="1" x="228.6" y="149.86"/>
 <instance part="P+1" gate="1" x="111.76" y="175.26"/>
@@ -11884,14 +11771,6 @@ With round pins</description>
 <instance part="GND9" gate="1" x="99.06" y="43.18"/>
 <instance part="GND10" gate="1" x="25.4" y="50.8"/>
 <instance part="GND11" gate="1" x="91.44" y="25.4"/>
-<instance part="BATV+" gate="G$1" x="60.96" y="175.26" smashed="yes">
-<attribute name="NAME" x="54.61" y="178.435" size="1.778" layer="95"/>
-<attribute name="VALUE" x="46.99" y="170.18" size="1.778" layer="96"/>
-</instance>
-<instance part="BATV-" gate="G$1" x="66.04" y="157.48" smashed="yes">
-<attribute name="NAME" x="59.69" y="160.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.69" y="152.4" size="1.778" layer="96"/>
-</instance>
 <instance part="R3" gate="G$1" x="38.1" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="36.6014" y="140.97" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="36.322" y="146.05" size="1.778" layer="96" rot="R90"/>
@@ -11901,14 +11780,6 @@ With round pins</description>
 <instance part="SR04" gate="-2" x="190.5" y="96.52"/>
 <instance part="SR04" gate="-3" x="190.5" y="93.98"/>
 <instance part="SR04" gate="-4" x="190.5" y="91.44"/>
-<instance part="LEDV+" gate="G$1" x="127" y="60.96" smashed="yes">
-<attribute name="NAME" x="120.65" y="64.135" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="55.88" size="1.778" layer="96"/>
-</instance>
-<instance part="LEDV-" gate="G$1" x="127" y="43.18" smashed="yes">
-<attribute name="NAME" x="120.65" y="46.355" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="38.1" size="1.778" layer="96"/>
-</instance>
 <instance part="P+5" gate="1" x="38.1" y="152.4" smashed="yes">
 <attribute name="VALUE" x="40.64" y="152.4" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -11948,6 +11819,17 @@ With round pins</description>
 <attribute name="VALUE" x="231.14" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND14" gate="1" x="228.6" y="91.44"/>
+<instance part="PWR_SW" gate="-1" x="71.12" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="70.358" y="170.18" size="1.524" layer="95" rot="R270"/>
+<attribute name="VALUE" x="87.122" y="173.863" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PWR_SW" gate="-2" x="73.66" y="172.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="74.168" y="159.512" size="1.524" layer="95" rot="R90"/>
+</instance>
+<instance part="12V" gate="-1" x="50.8" y="172.72" rot="R180"/>
+<instance part="12V" gate="-2" x="50.8" y="175.26" rot="R180"/>
+<instance part="LED_OUT" gate="-1" x="119.38" y="53.34"/>
+<instance part="LED_OUT" gate="-2" x="119.38" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -12003,9 +11885,11 @@ With round pins</description>
 <wire x1="83.82" y1="160.02" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="157.48" x2="93.98" y2="157.48" width="0.1524" layer="91"/>
 <junction x="83.82" y="157.48"/>
-<pinref part="BATV-" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="157.48" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="L7805" gate="A" pin="GND"/>
+<wire x1="55.88" y1="157.48" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="12V" gate="-1" pin="S"/>
+<wire x1="55.88" y1="172.72" x2="53.34" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="228.6" y1="165.1" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
@@ -12248,10 +12132,10 @@ With round pins</description>
 <wire x1="86.36" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="170.18" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="PWR_SWTCH" gate="G$1" pin="O"/>
-<wire x1="76.2" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="170.18" x2="83.82" y2="170.18" width="0.1524" layer="91"/>
 <junction x="83.82" y="170.18"/>
 <pinref part="L7805" gate="A" pin="IN"/>
+<pinref part="PWR_SW" gate="-2" pin="S"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -12279,13 +12163,13 @@ With round pins</description>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="78.74" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="63.5" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="63.5" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
 <junction x="99.06" y="63.5"/>
-<pinref part="LEDV+" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="60.96" x2="109.22" y2="60.96" width="0.1524" layer="91"/>
 <label x="91.44" y="66.04" size="1.778" layer="95"/>
+<pinref part="LED_OUT" gate="-1" pin="S"/>
+<wire x1="116.84" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="53.34" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FB" class="0">
@@ -12297,11 +12181,11 @@ With round pins</description>
 <wire x1="30.48" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="43.18" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="43.18"/>
-<pinref part="LEDV-" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="43.18" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="43.18" x2="109.22" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="50.8" x2="109.22" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
 <label x="68.58" y="5.08" size="1.778" layer="95"/>
+<pinref part="LED_OUT" gate="-2" pin="S"/>
+<wire x1="109.22" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="COMP" class="0">
@@ -12329,12 +12213,12 @@ With round pins</description>
 </net>
 <net name="+V_BAT" class="0">
 <segment>
-<wire x1="66.04" y1="175.26" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="PWR_SWTCH" gate="G$1" pin="P"/>
-<wire x1="66.04" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="BATV+" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
-<label x="63.5" y="175.26" size="1.778" layer="95"/>
+<wire x1="66.04" y1="175.26" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
+<label x="60.96" y="175.26" size="1.778" layer="95"/>
+<wire x1="66.04" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
+<pinref part="12V" gate="-2" pin="S"/>
+<pinref part="PWR_SW" gate="-1" pin="S"/>
+<wire x1="71.12" y1="170.18" x2="66.04" y2="170.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
