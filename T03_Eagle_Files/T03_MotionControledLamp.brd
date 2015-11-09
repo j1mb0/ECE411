@@ -1811,7 +1811,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C5" library="rcl" package="C1206" value="10uF" x="51.816" y="15.24" rot="R270"/>
 <element name="C6" library="Smartprj" package="C0603-ROUND" value="1uF" x="27.813" y="29.464" rot="R270"/>
 <element name="C7" library="rcl" package="C1206" value="10uF" x="32.766" y="21.082" rot="R180"/>
-<element name="C8" library="Smartprj" package="C0603-ROUND" value="0.1uF" x="34.29" y="37.846" smashed="yes" rot="R270">
+<element name="C8" library="Smartprj" package="C0603-ROUND" value="10uF" x="34.29" y="37.846" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.274" y="39.624" size="1.27" layer="25"/>
 <attribute name="VALUE" x="32.258" y="38.735" size="1.27" layer="27" rot="R270"/>
 </element>
@@ -1821,17 +1821,17 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="L7805" library="v-reg" package="78XXL" value="L7805" x="44.704" y="17.399" rot="R180"/>
 <element name="JP1" library="SparkFun-Connectors" package="2X5-SHROUDED_LOCK" value="AVR_SPI_PROG" x="16.51" y="12.446" rot="R90"/>
-<element name="BATV-" library="adafruit" package="1X01" value="BAT_POS_VOLT" x="48.895" y="26.797" smashed="yes">
+<element name="BATV+" library="adafruit" package="1X01" value="BAT_POS_VOLT" x="48.895" y="26.797" smashed="yes">
 <attribute name="NAME" x="45.1358" y="28.2448" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="47.625" y="23.622" size="1.27" layer="27"/>
 </element>
-<element name="BATV+" library="adafruit" package="1X01" value="BAT_GND" x="48.768" y="31.242" smashed="yes">
+<element name="BATV-" library="adafruit" package="1X01" value="BAT_GND" x="48.768" y="31.242" smashed="yes">
 <attribute name="NAME" x="45.2628" y="33.0708" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="48.514" y="33.274" size="1.27" layer="27"/>
 </element>
-<element name="L1" library="rcl" package="L4532P" value="22uH" x="31.877" y="26.035" smashed="yes" rot="R90">
-<attribute name="NAME" x="29.337" y="24.13" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="35.687" y="24.13" size="1.27" layer="27" rot="R90"/>
+<element name="L1" library="rcl" package="L4532P" value="22uH" x="31.623" y="26.797" smashed="yes" rot="R90">
+<attribute name="NAME" x="29.083" y="24.892" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.433" y="24.892" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="PWR_SWTCH" library="SparkFun-Electromechanical" package="KPS-1290" value="SWITCH_SPDT" x="56.134" y="23.495" rot="R90">
 <attribute name="PROD_ID" value="SWCH-10651" x="56.134" y="23.495" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1900,7 +1900,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="X2" pad="4"/>
 <contactref element="C7" pad="2"/>
 <contactref element="C5" pad="2"/>
-<contactref element="BATV+" pad="1"/>
+<contactref element="BATV-" pad="1"/>
 <contactref element="L7805" pad="GND"/>
 <contactref element="JP1" pad="6"/>
 <contactref element="JP1" pad="8"/>
@@ -2207,12 +2207,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U4" pad="4"/>
 <contactref element="L1" pad="2"/>
 <contactref element="D1" pad="A"/>
-<wire x1="31.877" y1="28.035" x2="31.877" y2="30.861" width="1.016" layer="1"/>
-<via x="31.877" y="30.861" extent="1-16" drill="0.6"/>
+<wire x1="31.623" y1="28.797" x2="31.623" y2="31.877" width="1.016" layer="1"/>
+<via x="31.623" y="31.877" extent="1-16" drill="0.6"/>
 <via x="27.305" y="36.957" extent="1-16" drill="0.6"/>
 <wire x1="27.305" y1="36.957" x2="28.949" y2="36.957" width="1.016" layer="1"/>
-<wire x1="31.877" y1="30.861" x2="31.877" y2="31.877" width="1.016" layer="16"/>
-<wire x1="31.877" y1="31.877" x2="27.305" y2="36.449" width="1.016" layer="16"/>
+<wire x1="31.623" y1="31.877" x2="27.305" y2="36.449" width="1.016" layer="16"/>
 <wire x1="27.305" y1="36.449" x2="27.305" y2="36.957" width="1.016" layer="16"/>
 <wire x1="30.2006" y1="34.8234" x2="30.1752" y2="34.798" width="0.4064" layer="1"/>
 <wire x1="30.1752" y1="34.798" x2="28.194" y2="34.798" width="0.4064" layer="1"/>
@@ -2221,11 +2220,11 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="+V_BAT">
 <contactref element="PWR_SWTCH" pad="P"/>
-<contactref element="BATV-" pad="1"/>
+<contactref element="BATV+" pad="1"/>
 <contactref element="C6" pad="2"/>
 <contactref element="U4" pad="6"/>
 <contactref element="L1" pad="1"/>
-<wire x1="31.877" y1="24.035" x2="32.099" y2="24.257" width="1.016" layer="1"/>
+<wire x1="31.623" y1="24.797" x2="32.099" y2="24.257" width="1.016" layer="1"/>
 <wire x1="32.099" y1="24.257" x2="45.085" y2="24.257" width="1.016" layer="1"/>
 <wire x1="45.085" y1="24.257" x2="47.625" y2="26.797" width="1.016" layer="1"/>
 <wire x1="47.625" y1="26.797" x2="48.895" y2="26.797" width="1.016" layer="1"/>
@@ -2236,14 +2235,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="32.099" y1="24.257" x2="31.972" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="31.972" y1="24.13" x2="29.591" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="29.591" y1="24.13" x2="29.337" y2="24.384" width="0.4064" layer="1"/>
-<wire x1="29.337" y1="24.384" x2="29.337" y2="26.416" width="0.4064" layer="1"/>
+<wire x1="29.337" y1="24.384" x2="29.337" y2="27.051" width="0.4064" layer="1"/>
 <wire x1="29.337" y1="27.051" x2="29.337" y2="31.623" width="0.4064" layer="1"/>
 <wire x1="29.337" y1="31.623" x2="28.194" y2="32.766" width="0.4064" layer="1"/>
 <wire x1="28.194" y1="32.766" x2="28.194" y2="33.02" width="0.4064" layer="1"/>
 <wire x1="28.194" y1="33.02" x2="28.6766" y2="33.5026" width="0.4064" layer="1"/>
 <wire x1="28.6766" y1="33.5026" x2="30.2006" y2="33.5026" width="0.4064" layer="1"/>
 <wire x1="27.813" y1="28.575" x2="29.337" y2="27.051" width="0.4064" layer="1"/>
-<wire x1="29.337" y1="27.051" x2="29.337" y2="26.416" width="0.4064" layer="1"/>
 </signal>
 <signal name="TRIG">
 <contactref element="U1" pad="1"/>
@@ -2323,6 +2321,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
+<approved hash="18,29,4650fa63bf620351"/>
 <approved hash="18,29,f162fea3027c0dbd"/>
 <approved hash="18,29,c24317881556d5e5"/>
 <approved hash="18,29,451f031e15714608"/>
@@ -2356,7 +2355,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,da48dd14d1ff8e24"/>
 <approved hash="18,29,b413c807e1f3520e"/>
 <approved hash="18,29,7e6c894d2c4f9bb5"/>
-<approved hash="18,29,4650fa63bf620351"/>
+<approved hash="18,29,d8203542b5405822"/>
 <approved hash="18,29,2697a5b0cfb44c93"/>
 <approved hash="18,29,0a45c4ceaec4604f"/>
 <approved hash="18,29,80d5e5552cf6e9d4"/>

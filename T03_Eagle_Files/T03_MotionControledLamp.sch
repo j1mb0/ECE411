@@ -11750,7 +11750,7 @@ With round pins</description>
 <part name="U4" library="Texas Instruments_By_element14_Batch_1" deviceset="TPS61161ADRVT" device=""/>
 <part name="L1" library="rcl" deviceset="L-US" device="L4532P" value="22uH"/>
 <part name="C6" library="Smartprj" deviceset="C-EU" device="C0603" value="1uF"/>
-<part name="C8" library="Smartprj" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C8" library="Smartprj" deviceset="C-EU" device="C0603" value="10uF"/>
 <part name="C9" library="Smartprj" deviceset="C-EU" device="C0603" value="220nF"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="M1206" value="10"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-ZENER" device="3.3V" value="0.2V"/>
@@ -11758,8 +11758,8 @@ With round pins</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="BATV-" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_POS_VOLT"/>
-<part name="BATV+" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_GND"/>
+<part name="BATV+" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_POS_VOLT"/>
+<part name="BATV-" library="adafruit" deviceset="PINHD-1X1" device="" value="BAT_GND"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="M1206" value="10k"/>
 <part name="L7805" library="v-reg" deviceset="78XXL" device="" value="L7805"/>
 <part name="SR04" library="con-molex" deviceset="22-23-2041" device=""/>
@@ -11884,11 +11884,11 @@ With round pins</description>
 <instance part="GND9" gate="1" x="99.06" y="43.18"/>
 <instance part="GND10" gate="1" x="25.4" y="50.8"/>
 <instance part="GND11" gate="1" x="91.44" y="25.4"/>
-<instance part="BATV-" gate="G$1" x="60.96" y="175.26" smashed="yes">
+<instance part="BATV+" gate="G$1" x="60.96" y="175.26" smashed="yes">
 <attribute name="NAME" x="54.61" y="178.435" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.99" y="170.18" size="1.778" layer="96"/>
 </instance>
-<instance part="BATV+" gate="G$1" x="66.04" y="157.48" smashed="yes">
+<instance part="BATV-" gate="G$1" x="66.04" y="157.48" smashed="yes">
 <attribute name="NAME" x="59.69" y="160.655" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.69" y="152.4" size="1.778" layer="96"/>
 </instance>
@@ -12003,7 +12003,7 @@ With round pins</description>
 <wire x1="83.82" y1="160.02" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="157.48" x2="93.98" y2="157.48" width="0.1524" layer="91"/>
 <junction x="83.82" y="157.48"/>
-<pinref part="BATV+" gate="G$1" pin="1"/>
+<pinref part="BATV-" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="L7805" gate="A" pin="GND"/>
 </segment>
@@ -12332,7 +12332,7 @@ With round pins</description>
 <wire x1="66.04" y1="175.26" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="PWR_SWTCH" gate="G$1" pin="P"/>
 <wire x1="66.04" y1="167.64" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="BATV-" gate="G$1" pin="1"/>
+<pinref part="BATV+" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <label x="63.5" y="175.26" size="1.778" layer="95"/>
 </segment>
