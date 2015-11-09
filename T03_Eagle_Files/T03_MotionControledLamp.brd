@@ -1831,23 +1831,29 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="5.207" y="27.813" size="1.27" layer="27"/>
 </element>
 <element name="C12" library="Smartprj" package="C0603-ROUND" value="0.1uF" x="18.034" y="38.354" rot="MR0"/>
-<element name="PWR_SW" library="con-molex" package="22-23-2021" value="22-23-2021" x="-3.302" y="5.461">
-<attribute name="OC_FARNELL" value="1462926" x="-3.302" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2021" x="-3.302" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="-3.302" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="25C3832" x="-3.302" y="5.461" size="1.778" layer="27" display="off"/>
+<element name="PWR_SW" library="con-molex" package="22-23-2021" value="22-23-2021" x="59.817" y="20.447" smashed="yes" rot="R270">
+<attribute name="OC_FARNELL" value="1462926" x="59.817" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="22-23-2021" x="59.817" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MOLEX" x="59.817" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="25C3832" x="59.817" y="20.447" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="55.118" y="23.114" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="54.737" y="22.987" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="12V" library="con-molex" package="22-23-2021" value="22-23-2021" x="-9.525" y="5.461">
-<attribute name="OC_FARNELL" value="1462926" x="-9.525" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2021" x="-9.525" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="-9.525" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="25C3832" x="-9.525" y="5.461" size="1.778" layer="27" display="off"/>
+<element name="12V" library="con-molex" package="22-23-2021" value="22-23-2021" x="59.817" y="27.051" smashed="yes" rot="R270">
+<attribute name="OC_FARNELL" value="1462926" x="59.817" y="27.051" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="22-23-2021" x="59.817" y="27.051" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MF" value="MOLEX" x="59.817" y="27.051" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="25C3832" x="59.817" y="27.051" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="55.118" y="28.829" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="54.737" y="29.591" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="LED_OUT" library="con-molex" package="22-23-2021" value="22-23-2021" x="-15.748" y="5.461">
-<attribute name="OC_FARNELL" value="1462926" x="-15.748" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="22-23-2021" x="-15.748" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="MOLEX" x="-15.748" y="5.461" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="25C3832" x="-15.748" y="5.461" size="1.778" layer="27" display="off"/>
+<element name="LED_OUT" library="con-molex" package="22-23-2021" value="22-23-2021" x="41.91" y="39.624" smashed="yes">
+<attribute name="OC_FARNELL" value="1462926" x="41.91" y="39.624" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="22-23-2021" x="41.91" y="39.624" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="MOLEX" x="41.91" y="39.624" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="25C3832" x="41.91" y="39.624" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="39.497" y="34.544" size="1.016" layer="25" ratio="10"/>
+<attribute name="VALUE" x="39.37" y="34.544" size="1.016" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>
@@ -1917,7 +1923,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="49.403" y="23.368" extent="1-16" drill="0.5"/>
 <via x="44.704" y="13.589" extent="1-16" drill="0.5"/>
 <contactref element="12V" pad="1"/>
-<wire x1="4.699" y1="15.367" x2="-10.795" y2="5.461" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AREF">
 <contactref element="U1" pad="20"/>
@@ -2107,7 +2112,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="51.816" y1="18.796" x2="49.53" y2="21.082" width="1.016" layer="1"/>
 <wire x1="49.53" y1="21.082" x2="49.53" y2="21.209" width="1.016" layer="1"/>
 <contactref element="PWR_SW" pad="2"/>
-<wire x1="-2.032" y1="5.461" x2="47.244" y2="21.209" width="0" layer="19" extent="1-1"/>
+<wire x1="59.817" y1="19.177" x2="55.88" y2="19.177" width="1.016" layer="1"/>
+<wire x1="55.88" y1="19.177" x2="53.848" y2="21.209" width="1.016" layer="1"/>
 </signal>
 <signal name="RST">
 <contactref element="U1" pad="29"/>
@@ -2145,7 +2151,10 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C8" pad="2"/>
 <wire x1="31.249" y1="36.957" x2="34.29" y2="36.957" width="1.016" layer="1"/>
 <contactref element="LED_OUT" pad="1"/>
-<wire x1="-17.018" y1="5.461" x2="31.249" y2="36.957" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="36.957" x2="39.624" y2="36.957" width="1.016" layer="1"/>
+<wire x1="39.624" y1="36.957" x2="40.513" y2="37.846" width="1.016" layer="1"/>
+<wire x1="40.513" y1="37.846" x2="40.513" y2="39.497" width="1.016" layer="1"/>
+<wire x1="40.513" y1="39.497" x2="40.64" y2="39.624" width="1.016" layer="1"/>
 </signal>
 <signal name="FB">
 <contactref element="U4" pad="1"/>
@@ -2160,7 +2169,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="39.5" y1="29.21" x2="41.529" y2="29.21" width="1.016" layer="1"/>
 <wire x1="41.529" y1="29.21" x2="42.926" y2="30.607" width="1.016" layer="1"/>
 <contactref element="LED_OUT" pad="2"/>
-<wire x1="-14.478" y1="5.461" x2="32.2834" y2="33.5026" width="0" layer="19" extent="1-1"/>
+<wire x1="42.926" y1="30.607" x2="42.926" y2="30.734" width="1.016" layer="1"/>
+<wire x1="42.926" y1="30.734" x2="43.18" y2="30.988" width="1.016" layer="1"/>
+<wire x1="43.18" y1="30.988" x2="43.18" y2="39.624" width="1.016" layer="1"/>
 </signal>
 <signal name="COMP">
 <contactref element="U4" pad="2"/>
@@ -2187,8 +2198,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="U4" pad="6"/>
 <contactref element="L1" pad="1"/>
 <wire x1="31.623" y1="24.797" x2="32.099" y2="24.257" width="1.016" layer="1"/>
-<wire x1="32.099" y1="24.257" x2="45.085" y2="24.257" width="1.016" layer="1"/>
-<wire x1="45.085" y1="24.257" x2="47.625" y2="26.797" width="1.016" layer="1"/>
+<wire x1="32.099" y1="24.257" x2="46.482" y2="24.257" width="1.016" layer="1"/>
 <wire x1="32.099" y1="24.257" x2="31.972" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="31.972" y1="24.13" x2="29.591" y2="24.13" width="0.4064" layer="1"/>
 <wire x1="29.591" y1="24.13" x2="29.337" y2="24.384" width="0.4064" layer="1"/>
@@ -2201,8 +2211,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.813" y1="28.575" x2="29.337" y2="27.051" width="0.4064" layer="1"/>
 <contactref element="12V" pad="2"/>
 <contactref element="PWR_SW" pad="1"/>
-<wire x1="-4.572" y1="5.461" x2="29.337" y2="24.384" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.255" y1="5.461" x2="-4.572" y2="5.461" width="0" layer="19" extent="1-1"/>
+<wire x1="46.482" y1="24.257" x2="48.006" y2="25.781" width="1.016" layer="1"/>
+<wire x1="48.006" y1="25.781" x2="59.817" y2="25.781" width="1.016" layer="1"/>
+<wire x1="59.817" y1="25.781" x2="59.817" y2="21.717" width="1.016" layer="1"/>
 </signal>
 <signal name="TRIG">
 <contactref element="U1" pad="1"/>
@@ -2283,24 +2294,27 @@ Please make sure your boards conform to these design rules.</description>
 </signals>
 <errors>
 <approved hash="18,29,4650fa63bf620351"/>
+<approved hash="18,29,d8203542b5405822"/>
+<approved hash="18,29,3263ac5858c965fd"/>
+<approved hash="18,29,5ef124b9df4bbe03"/>
 <approved hash="18,29,f162fea3027c0dbd"/>
-<approved hash="18,29,c24317881556d5e5"/>
 <approved hash="18,29,451f031e15714608"/>
+<approved hash="18,29,c24317881556d5e5"/>
 <approved hash="18,29,a8ddba1c44595698"/>
 <approved hash="18,29,c0d77fd6d3617298"/>
 <approved hash="18,29,896ae53d576b25c4"/>
 <approved hash="18,29,d17ede251f36fbee"/>
 <approved hash="18,29,3de9dc76c7173795"/>
-<approved hash="18,29,053a1dc125daddd9"/>
-<approved hash="18,29,a8472847a621de41"/>
 <approved hash="18,29,50198c9ed43fe840"/>
 <approved hash="18,29,57272807a6212121"/>
-<approved hash="18,29,8f7aa326aac0c121"/>
+<approved hash="18,29,a8472847a621de41"/>
+<approved hash="18,29,053a1dc125daddd9"/>
 <approved hash="18,29,23e4a3ee87e0f941"/>
-<approved hash="18,29,ef4aaee969f7d074"/>
+<approved hash="18,29,8f7aa326aac0c121"/>
 <approved hash="18,29,10eaa169693720d4"/>
-<approved hash="18,29,30096ac187dd3dea"/>
+<approved hash="18,29,ef4aaee969f7d074"/>
 <approved hash="18,29,272ab999343f4a73"/>
+<approved hash="18,29,30096ac187dd3dea"/>
 <approved hash="18,29,8d57443318d83a31"/>
 <approved hash="18,29,2439d2a584c6ab77"/>
 <approved hash="18,29,6d9a359f915b3280"/>
@@ -2316,7 +2330,7 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,da48dd14d1ff8e24"/>
 <approved hash="18,29,b413c807e1f3520e"/>
 <approved hash="18,29,7e6c894d2c4f9bb5"/>
-<approved hash="18,29,d8203542b5405822"/>
+<approved hash="18,29,da9b38e0fde21f99"/>
 <approved hash="18,29,2697a5b0cfb44c93"/>
 <approved hash="18,29,0a45c4ceaec4604f"/>
 <approved hash="18,29,80d5e5552cf6e9d4"/>
@@ -2329,8 +2343,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,017cd25cd0d20d72"/>
 <approved hash="18,29,bd6e65327335ab69"/>
 <approved hash="18,29,6a5a4ce610e1365d"/>
-<approved hash="18,29,3263ac5858c965fd"/>
-<approved hash="18,29,5ef124b9df4bbe03"/>
+<approved hash="18,29,7c03e3f8cade5528"/>
+<approved hash="18,29,f70c7ef663dfce2a"/>
 <approved hash="18,29,c09a210ee40e059a"/>
 <approved hash="18,29,3cefc0afa9af55ef"/>
 <approved hash="18,29,8e129ec469977941"/>
@@ -2339,6 +2353,10 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,83e38a2cfc67f5a8"/>
 <approved hash="18,29,8926a152019d5411"/>
 <approved hash="18,29,63825ca0818cc356"/>
+<approved hash="18,29,6d9d0ab277041d15"/>
+<approved hash="18,29,501406cf7ab52188"/>
+<approved hash="18,29,b02fe6809a7ac04f"/>
+<approved hash="18,29,4d5ceb7796fd3dd0"/>
 </errors>
 </board>
 </drawing>
